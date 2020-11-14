@@ -1,0 +1,25 @@
+.Calculator{
+	font-family: 'Roboto', sans-serif;
+	width: 96px;
+	padding: 26px 0;
+	text-align: center;
+}
+.Calculator__output{
+	background-color:black;
+	color: white; 
+	border-radius:12px 12px 0 0;
+}
+
+.Calculator__fun {
+	background-color:#ff9900;
+	color: white; 
+}
+.Calculator__numb {
+	background-color:#bbbbbb;
+	color: white; 
+}
+
+.Calculator__enter {
+	background-color:#f1f1f1;
+	color: white; 
+}
