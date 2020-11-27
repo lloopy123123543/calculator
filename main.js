@@ -65,15 +65,111 @@ $("#4").click(function(){
 	}
 	output();
 });
+$("#5").click(function(){
+	console.log(5);
+	if (calculator.numberA === null){
+		calculator.numberA = 5;
+		calculator.output = 5;
+	}
+
+	else {
+		calculator.numberB = 5;
+		calculator.output = 5;
+	}
+	output();
+
+});
+
+$("#6").click(function(){
+	console.log(6);
+	if (calculator.numberA === null){
+		calculator.numberA = 6;
+		calculator.output = 6;
+	}
+
+	else {
+		calculator.numberB = 6;
+		calculator.output = 6;
+	}
+	output();
+
+});
+
+$("#7").click(function(){
+	console.log(7);
+	if (calculator.numberA === null){
+		calculator.numberA = 7;
+		calculator.output = 7;
+	}
+
+	else {
+		calculator.numberB = 7;
+		calculator.output = 7;
+	}
+	output();
+
+});
+
+$("#8").click(function(){
+	console.log(8);
+	if (calculator.numberA === null){
+		calculator.numberA = 8;
+		calculator.output = 8;
+	}
+
+	else {
+		calculator.numberB = 8;
+		calculator.output = 8;
+	}
+	output();
+
+});
+
+$("#9").click(function(){
+	console.log(9);
+	if (calculator.numberA === null){
+		calculator.numberA = 9;
+		calculator.output = 9;
+	}
+
+	else {
+		calculator.numberB = 9;
+		calculator.output = 9;
+	}
+	output();
+
+});
+
 
 $("#plus").click(function(){
 	console.log('plus');
 calculator.func = 'plus'});
 
+$("#minus").click(function(){
+	console.log('minus');
+calculator.func = 'minus'});
+$("#umn").click(function(){
+	console.log('umn');
+calculator.func = 'umn'});
+$("#del").click(function(){
+	console.log('del');
+calculator.func = 'del'});
+
 $("#enter").click(function(){
 	console.log('enter');
 	if (calculator.func ==='plus') {
 		calculator.enter = calculator.numberA + calculator.numberB;
+		calculator.output = calculator.enter;}
+	if (calculator.func ==='minus') {
+		calculator.enter = calculator.numberA - calculator.numberB;
+		calculator.output = calculator.enter;
+	}
+	if (calculator.func ==='umn') {
+		calculator.enter = calculator.numberA * calculator.numberB;
+		calculator.output = calculator.enter;
+	}
+	if (calculator.func ==='del') {
+		calculator.enter = calculator.numberA / calculator.numberB;
 		calculator.output = calculator.enter;
 	}
 	output();
@@ -82,9 +178,4 @@ $("#enter").click(function(){
 function output() {
 	$("#output").text(calculator.output);
 }
-
-
-
-
-
 });
